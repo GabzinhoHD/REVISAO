@@ -7,11 +7,11 @@
 }
 
 :root{
-    --azul-fraco: #00a6fbff;
-    --azul-claro: #0582caff;
-    --azul: #006494ff;
-    --azul-forte: #003554ff;
-    --azul-escuro: #051923ff;
+    --gunmetal: #022b3aff;
+    --teal: #1f7a8cff;
+    --columbia-blue: #bfdbf7ff;
+    --lavender-web: #e1e5f2ff;
+    --white: #ffffffff;
     --fonte-titulo:"Playfair Display", serif;
     --fonte-texto: "Montserrat", sans-serif;
 }
@@ -24,4 +24,17 @@ body{
     align-items: center;
     min-height: 100vh;
     font-family: var(--fonte-texto);
+}
+
+.caixa-principal {
+    background-color: var(--azul-claro);
+    width: 90%;
+    padding: 20px;
+    max-width: 600px;
+    text-align: center;
+}
+
+.titulo{
+    color: var(--azul-fraco);
+    font-family: var(--fonte-titulo);
 }
