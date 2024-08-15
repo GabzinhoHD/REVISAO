@@ -18,7 +18,7 @@
 
 body{
     background-color: var(--azul-escuro);
-    color: var(--azul);
+    color: var(--azul-claro);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,7 +27,7 @@ body{
 }
 
 .caixa-principal {
-    background-color: var(--branco-escurinho);
+    background-color: var(--azul);
     width: 90%;
     max-width: 600px;
     text-align: center;
@@ -35,19 +35,19 @@ body{
 }
 
 .titulo{
-    color: var(--azul-claro);
+    color: var(--azul-escuro);
     font-family: var(--fonte-titulo);
 }
 button{
-    background-color: var(--azul-escuro);
+    background-color: var(--branco);
     color: var(--azul);
     border: none;
     border-radius: 15px;
     padding: 15px;
     transition: 0.4s;
-    margin: 10 auto ;
+    margin: 20 auto ;
 }
 
-.button:houver{
+.houver{
     background-color: var(--azul-claro);
 }
