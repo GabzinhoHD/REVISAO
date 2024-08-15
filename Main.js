@@ -2,92 +2,110 @@ const caixaPrincial = document.querySelector('.caixa-principal');
 const caixaPerguntas = document.querySelector('.caixa-perguntas');
 const caixaAlternativas = document.querySelector('.caixa-alternativas');
 const caixaResultado = document.querySelector('.caixa-resultado');
-const textoResultado = document.querySelector('.texto-resultado');
+const textoResultado = document.querySelector('texto-resultado');
 
 const perguntas = [
     {
         enunciado: "texto01",
         alternativas: [
             {
-                texto:'alternativa01',
-                afirmaçao:'afirmação01'
+                texto:"alternativa01",
+                afirmacao:"afirmacao01"
             },
             {
-                texto:'alterantiva02',
-                afirmaçao:'afirmação02'
-            }
+                texto:"alternativa02",
+                afirmacao:"afirmacao02"
+            },
+            
         ]
     },
     {
         enunciado: "texto02",
         alternativas: [
             {
-                texto:'alternativa03',
-                afirmaçao:'afirmação03'
+                texto:"alternativa03",
+                afirmacao:"afirmacao03"
             },
             {
-                texto:'alterantiva04',
-                afirmaçao:'afirmação04'
-            }
+                texto:"alternativa04",
+                afirmacao:"afirmacao04"
+            },
+            
         ]
     },
     {
         enunciado: "texto03",
         alternativas: [
             {
-                texto:'alternativa05',
-                afirmaçao:'afirmação05'
+                texto:"alternativa05",
+                afirmacao:"afirmacao05"
             },
             {
-                texto:'alterantiva06',
-                afirmaçao:'afirmação06'
-            }
+                texto:"alternativa06",
+                afirmacao:"afirmacao06"
+            },
         ]
     },
     {
         enunciado: "texto04",
         alternativas: [
             {
-                texto:'alternativa07',
-                afirmaçao:'afirmação07'
+                texto:"alternativa07",
+                afirmacao:"afirmacao07"
             },
             {
-                texto:'alterantiva08',
-                afirmaçao:'afirmação08'
-            }
+                texto:"alternativa08",
+                afirmacao:"afirmacao08"
+            },
         ]
     },
     {
         enunciado: "texto05",
         alternativas: [
             {
-                texto:'alternativa09',
-                afirmaçao:'afirmação09'
+                texto:"alternativa09",
+                afirmacao:"afirmacao09"
             },
             {
-                texto:'alterantiva10',
-                afirmaçao:'afirmação10'
-            }
+                texto:"alternativa10",
+                afirmacao:"afirmacao10"
+            },
         ]
     }
 ]
 
 let atual = 0;
 let perguntaAtual;
+let historiaFinal ='';
 
-function mostraPerguntas(){
+function mostraPergunta(){
+    if(atual>= perguntas.length){
+        mostraResultado();
+        return
+    }
     perguntaAtual = perguntas[atual];
     caixaPerguntas.textContent = perguntaAtual.enunciado;
+    caixaAlternativas.textContent ="";
     mostraAlternativas();
 }
 
 function mostraAlternativas(){
-    for(const alternativa of perguntaAtual.alternativas) {
+    for(const alternativa of perguntaAtual.alternativas){
         const botaoAlternativas = document.createElement("button");
         botaoAlternativas.textContent = alternativa.texto;
-        botao
-        caixaAlternativas.appendchild(botaoAlternativas);
-    };
+        botaoAlternativas.addEventListener('click',() => respostaSelecionada(alternativa))
+        caixaAlternativas.appendChild(botaoAlternativas);
+    }
 }
-
-mostraPerguntas();
+function respostaSelecionada(opcaoSelecionada){
+    const afirmacoes = opcaoSelecionada.afirmacao;
+    historiaFinal += afirmacoes + " ";
+    atual++;            
+    mostraPergunta()
+}
+function mostraResultado(){
+    caixaPerguntas.textContent = "Inicio do texto.....";
+    textoResultado.textContent = historiaFinal;
+    caixaAlternativas.textContent = "";
+}
+mostraPergunta();

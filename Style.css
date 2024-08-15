@@ -7,11 +7,11 @@
 }
 
 :root{
-    --gunmetal: #022b3aff;
-    --teal: #1f7a8cff;
-    --columbia-blue: #bfdbf7ff;
-    --lavender-web: #e1e5f2ff;
-    --white: #ffffffff;
+    --azul-escuro: #022b3aff;
+    --azul: #1f7a8cff;
+    --azul-claro: #bfdbf7ff;
+    --branco-escurinho: #e1e5f2ff;
+    --branco: #ffffffff;
     --fonte-titulo:"Playfair Display", serif;
     --fonte-texto: "Montserrat", sans-serif;
 }
@@ -27,14 +27,27 @@ body{
 }
 
 .caixa-principal {
-    background-color: var(--azul-claro);
+    background-color: var(--branco-escurinho);
     width: 90%;
-    padding: 20px;
     max-width: 600px;
     text-align: center;
+    padding: 20px;
 }
 
 .titulo{
-    color: var(--azul-fraco);
+    color: var(--azul-claro);
     font-family: var(--fonte-titulo);
+}
+button{
+    background-color: var(--azul-escuro);
+    color: var(--azul);
+    border: none;
+    border-radius: 15px;
+    padding: 15px;
+    transition: 0.4s;
+    margin: 10 auto ;
+}
+
+.button:houver{
+    background-color: var(--azul-claro);
 }
