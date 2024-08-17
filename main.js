@@ -26,8 +26,8 @@ const perguntas = [
                 afirmacao: "porém a fera me perseguiu e me atacou brutalmente, foi quando encontrei um machado, então decidi lutar pela minha vida, a batalha foi intensa. No fim a besta fugiu. "
             },
             {
-                texto: "Ignorar a arma e continuar correndo”,
-                afirmacao: "porém a fera me perseguiu e me atacou brutalmente, corri por muito tempo pelo ardiloso caminho, mas no fim alcancei a saída e perdi a besta de vista."
+                texto: "Ignorar a arma e continuar correndo",
+                afirmacao: "porém a fera me perseguiu e me atacou brutalmente, corri por muito tempo pelo ardiloso caminho, mas no fim alcancei a saída e perdi a besta de vista.",
             }
         ]
     },
@@ -36,11 +36,11 @@ const perguntas = [
         alternativas: [
             {
                 texto:"O tesouro e muito valioso para ser ignorado, seu valor pode salvar minha vida, mas infelizmente só terei condições de levar algumas moedas.",
-                afirmacao: "Após o encontro com a besta, foi descuidado e cai em uma caverna, lá achei o tesouro que buscava. A luta tinha me ferido muito então só consegui levar poucas moedas. "
+                afirmacao: "Após o encontro com a besta, foi descuidado e cai em uma caverna, lá achei o tesouro que buscava. A fera tinha me ferido muito então só consegui levar poucas moedas. "
             },
             {
                 texto: "Sou muito jovem para morrer tentar levar a fortuna será um desafio, infelizmente terei que deixá-lo",
-                afirmacao: "Após o encontro com a besta, foi descuidado e cai em uma caverna, lá achei o tesouro que buscava.  A luta tinha me ferido muito então optei por sair do local e retornar em outro momento."
+                afirmacao: "Após o encontro com a besta, foi descuidado e cai em uma caverna, lá achei o tesouro que buscava. A fera tinha me ferido muito então optei por sair do local e retornar em outro momento."
             }
         ]
     },
@@ -49,11 +49,11 @@ const perguntas = [
         alternativas: [
             {
                 texto:"Não sairei dessa ilha sem uma boa quantia de dinheiro, retornarei a caverna, agora com o meu navio",
-                afirmacao: "Ao chegar em meu barco a ganância me consumiu e decidi voltar até a caverna pelo mar "
+                afirmacao: "Ao chegar em meu barco a ganância me consumiu e decidi voltar até a caverna pelo mar. "
             },
             {
                 texto: "Merda! Terei de retornar uma outra hora para buscar toda a fortuna, espero que ninguém a encontre até o meu retorno.",
-                afirmacao: "Ao chegar em meu barco a ganância tentou me consumir, mas meu sofrimento falou mais alto então decidi voltar a terra firme"
+                afirmacao: "Ao chegar em meu barco a ganância tentou me consumir, mas meu sofrimento falou mais alto então decidi voltar a terra firme do continente."
             }
         ]
     },
