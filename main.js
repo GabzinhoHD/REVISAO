@@ -6,67 +6,67 @@ const textoResultado = document.querySelector('.texto-resultado');
 
 const perguntas = [
     {
-        enunciado: "texo01",
+        enunciado: "Você é um caçador de tesouros indo a uma ilha inóspita em busca de uma grande fortuna pirata escondido, ao desembarcar você pega seu mapa conquistado em uma luta de bar e parte atrás da riqueza. Caminhando pela ilha, uma enorme besta mutante aparece em sua frente, você corre e se de para com dois caminhos: ",
         alternativas: [
             {
-                texto:"alternativa01",
-                afirmacao: "afirmação01"
+                texto:"O primeiro é uma trilha para uma montanha, um caminho muito aberto e rochoso. ",
+                afirmacao: "Ao chegar na ilha me deparei com um monstro, contaminado pelo medo corri para as montanhas, "
             },
             {
-                texto: "alternativa02",
-                afirmacao: "afirmação02"
+                texto: "O segundo é uma estrada em meio a floresta, uma densa mata, as copas das árvores impedem a passagem de luz pelo caminho. ",
+                afirmacao: "Ao chegar na ilha me deparei com um monstro, contaminado pelo medo corri para um floresta, "
             }
         ]
     },
     {
-        enunciado: "texo02",
+        enunciado: "A besta ainda o persegue, ela o ataca mas você está com muita adrenalina para sentir a dor. Você se esquiva de um golpe mortal e segue o caminho esbarrando em tudo no trajeto, você tem coisas mais importantes para se preocupar do que para onde você está correndo.Porém esse descuido pode ser sua ruína. Você tropeça e cai de um barranco próximo a um machado cravado em uma árvore e se vê diante de mais uma escolha   ",
         alternativas: [
             {
-                texto:"alternativa03",
-                afirmacao: "afirmação03"
+                texto:"Pegar o machado e tentar lutar pela sua vida ",
+                afirmacao: "porém a fera me perseguiu e me atacou brutalmente, foi quando encontrei um machado, então decidi lutar pela minha vida, a batalha foi intensa. No fim a besta fugiu. "
             },
             {
-                texto: "alternativa04",
-                afirmacao: "afirmação04"
+                texto: "Ignorar a arma e continuar correndo”,
+                afirmacao: "porém a fera me perseguiu e me atacou brutalmente, corri por muito tempo pelo ardiloso caminho, mas no fim alcancei a saída e perdi a besta de vista."
             }
         ]
     },
     {
-        enunciado: "texo03",
+        enunciado: "Você consegue com muita dificuldade passar pelo caminho, despistando a terrível fera mutante, enquanto você se recuperava da fuga/luta, se depara com uma entrada escondida para uma caverna profunda. Se aproximando dela você escorrega e acaba caindo nela. Curiosamente essa é justamente a caverna do tesouro, mas também pode ser o seu túmulo, você está muito ferido e precisa urgentemente de auxílio médico.",
         alternativas: [
             {
-                texto:"alternativa05",
-                afirmacao: "afirmação05"
+                texto:"O tesouro e muito valioso para ser ignorado, seu valor pode salvar minha vida, mas infelizmente só terei condições de levar algumas moedas.",
+                afirmacao: "Após o encontro com a besta, foi descuidado e cai em uma caverna, lá achei o tesouro que buscava. A luta tinha me ferido muito então só consegui levar poucas moedas. "
             },
             {
-                texto: "alternativa06",
-                afirmacao: "afirmação06"
+                texto: "Sou muito jovem para morrer tentar levar a fortuna será um desafio, infelizmente terei que deixá-lo",
+                afirmacao: "Após o encontro com a besta, foi descuidado e cai em uma caverna, lá achei o tesouro que buscava.  A luta tinha me ferido muito então optei por sair do local e retornar em outro momento."
             }
         ]
     },
     {
-        enunciado: "texo04",
+        enunciado: "Mesmo quase desmaiando você consegue milagrosamente subir a caverna, se deparando com um pequeno pote, aparentemente quem escondeu esse tesouro morreu antes de sair dessa maldita ilha, você se pergunta se o monstro teria algo haver com isso. Independente do fim que o pirata levou, você entra no barco e retorna de volta ao seu próprio navio. Ao chegar nele, a ganância sussurra em seus ouvidos, entretanto suas feridas se agravam ainda mais. E uma tempestade se aproxima rapidamente",
         alternativas: [
             {
-                texto:"alternativa07",
-                afirmacao: "afirmação07"
+                texto:"Não sairei dessa ilha sem uma boa quantia de dinheiro, retornarei a caverna, agora com o meu navio",
+                afirmacao: "Ao chegar em meu barco a ganância me consumiu e decidi voltar até a caverna pelo mar "
             },
             {
-                texto: "alternativa08",
-                afirmacao: "afirmação08"
+                texto: "Merda! Terei de retornar uma outra hora para buscar toda a fortuna, espero que ninguém a encontre até o meu retorno.",
+                afirmacao: "Ao chegar em meu barco a ganância tentou me consumir, mas meu sofrimento falou mais alto então decidi voltar a terra firme"
             }
         ]
     },
     {
-        enunciado: "texo05",
+        enunciado: "Você faz sua escolha e começa a velejar, quando a tempestade finalmente o alcança sua determinação e a enfraquecida sua vida pode estar proxima",
         alternativas: [
             {
-                texto:"alternativa09",
-                afirmacao: "afirmação09"
+                texto:"Não morrei nesta ilha irei enfrentar os mares e os céus. ",
+                afirmacao: "Entretanto uma tempestade me pegou desprevinido, virei o barco para longe da ilha e lutei contra a fúria da natureza, os mares eram implacáveis quase morri, mas agora sou triunfante perante as águas. Buscarei ajuda médica e logo voltarei à ilha para pegar definitivamente toda a fortuna pirata. "
             },
             {
-                texto: "alternativa10",
-                afirmacao: "afirmação10"
+                texto: "E melhor eu atracar na ilha e esperar, ainda há esperanças seguras de minha sobrevivência ",
+                afirmacao: "Entretanto uma tempestade me pegou desprevinido, virei o barco para a ilha, mas os céus me castigaram com um poderoso raio que fez o navio naufragar, agora estou preso nesta ilha e só Deus sabe o que me espera. "
             }
         ]
     }
@@ -104,7 +104,7 @@ function respostaSelecionada(opcaoSelecionada){
 }
 
 function mostraResultado(){
-    caixaPerguntas.textContent = " Inicio do texto..."
+    caixaPerguntas.textContent = "Sua caçada pelo tesouro chegou ao fim, como de costume você relata sua jornada em seu diário e aqui está o que você pôs em palavras do que vivenciou na ilha: "
     textoResultado.textContent = historiaFinal;
     caixaAlternativas.textContent = "";
 }
